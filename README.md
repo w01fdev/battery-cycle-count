@@ -9,5 +9,6 @@ the format of the <.csv> file and more. Since the code is not very large and
 complex so far, just look there.
 
 It is also logical that the predictions are not very accurate, as no wear is 
-included in the calculation. It is planned to implement these formulas from a 
-PDF, but this may take a while.
+included in the calculation. I can't say yet whether this will be implemented. 
+so far, a simple calculation like the one implemented so far has been enough 
+for me.
