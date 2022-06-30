@@ -125,7 +125,7 @@ class Base:
 
 
 class Cycles(Base):
-    """"""
+    """Class for calculations of the cycle."""
 
     def __init__(self, file: str):
         super().__init__(file)
