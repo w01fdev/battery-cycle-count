@@ -71,22 +71,16 @@ class Base:
     later for machine or deep learning to find correlations.
     """
 
-    def __init__(self, file: str, delete_last_row: bool = True):
+    def __init__(self, file: str):
         """Initialization of the class.
 
         :param file: <str>
             path to file.
-        :param delete_last_row: <bool> -> std: <True>
-            Since the last row is not complete (days = nan), it is deleted by
-            default. If the parameter is set to <False>, it is retained.
         """
         super().__init__()
 
         self._df = pd.read_csv(file, index_col=0, parse_dates=[0])
         self._file = file
-
-        if delete_last_row:
-            self._df.drop(self._df.tail(1).index, inplace=True)
 
         # create columns
         self._df['percent'] = (self._df['end_percent'] - self._df['start_percent'])
