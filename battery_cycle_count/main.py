@@ -157,6 +157,31 @@ class Cycles(Base):
 
         return round(float(300 - self.get_cycle_count()), 2)
 
+    def get_start_percent_mean(self) -> float:
+        """Get the mean value of start percentages."""
+
+        return self._mean('start_percent')
+
+    def get_end_percent_mean(self) -> float:
+        """Get the mean value of end percentages."""
+
+        return self._mean('end_percent')
+
+    def get_percent_mean(self) -> float:
+        """Get the mean value of percent loaded."""
+
+        return self._mean('percent')
+
+    def get_days_mean(self) -> float:
+        """Get the mean value of days until reloading."""
+
+        return self._mean('days')
+
+    def _mean(self, column: str) -> float:
+        """"""
+
+        return self._df[column].mean().round(2)
+
 
 def main():
     """Main function of the program."""
