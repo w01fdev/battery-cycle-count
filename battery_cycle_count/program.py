@@ -32,4 +32,4 @@ HACKERS = ['w01f', ]
 LICENSE = 'GPL-3.0'
 NAME = 'Battery Cycle Count'
 URL = 'https://github.com/w01fdev/'
-VERSION = '0.1.1'
+VERSION = '0.1.2'

@@ -107,11 +107,8 @@ class Base:
 
         self._file = file
 
-    def _create_column_days(self):
-        """Creates the data for the <days> column in the <pandas.DataFrame>.
-
-        :return: <list>
-        """
+    def _create_column_days(self) -> list:
+        """Creates the data for the <days> column in the <pandas.DataFrame>."""
 
         days = []
 
