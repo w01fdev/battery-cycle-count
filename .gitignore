@@ -5,4 +5,5 @@ venv/
 dev/
 .egg-info/
 .idea
+.env
 db.sqlite3

@@ -25,11 +25,11 @@ fck capitalism, fck patriarchy, fck racism, fck animal oppression ...
 
 
 # constants
-DATE = '2022-06-30'
-DESCRIPTION = '''Calculates battery cycle statistics from a <.csv> file'''
-EMAIL = 'w01f@w01f.dev'
+DATE = '2022-07-16'
+DESCRIPTION = '''Calculates battery cycle statistics from a <.csv> file.'''
+EMAIL = 'info@w01f.dev'
 HACKERS = ['w01f', ]
 LICENSE = 'GPL-3.0'
 NAME = 'Battery Cycle Count'
 URL = 'https://github.com/w01fdev/'
-VERSION = '0.3.0'
+VERSION = '0.4.0'

@@ -126,7 +126,7 @@ class Cycles(Base):
 
         return float(self._df['percent'].sum() / 100)
 
-    def get_cycle_prediction(self, years: int = 1) -> float:
+    def get_cycle_years_prediction(self, years: int = 1) -> float:
         """Returns the expected cycles for <x> years."""
 
         date = (datetime.date.today() + relativedelta(years=years) - datetime.date.today()).days
@@ -178,7 +178,7 @@ class Cycles(Base):
         return self._mean('days')
 
     def _mean(self, column: str) -> float:
-        """"""
+        """Private method which rounds the mean value."""
 
         return self._df[column].mean().round(2)
 
